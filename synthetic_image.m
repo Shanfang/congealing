@@ -1,7 +1,7 @@
 %% Gray image
-rows = 256;
-columns = 256;
-grayImage = ones(rows, columns, 'uint8').*200;
+rows = 5;
+columns = 5;
+grayImage = ones(rows, columns, 'double').*200;
 xCoords= [80 180 180 80 80];
 yCoords = [80 80 180 180 80];
 mask = poly2mask(xCoords, yCoords, rows, columns);
